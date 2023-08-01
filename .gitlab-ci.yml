@@ -1,0 +1,15 @@
+include:
+  - project: dataalliance/products/analyticsb2b/product/apps/ci-templates
+    ref: "1.5.0"
+    file:
+      - /templates/include-all.yml
+
+variables:
+  AS_SRC_DIR: "dwd"
+  AS_PYTHON_VERSION: "3.8"
+  AS_POETRY_IMAGE: "europe-west1-docker.pkg.dev/mgr-platform-prod-khsu/apps/containers/poetry:main3.8"
+  AS_PYTHON_IMAGE: "europe-west1-docker.pkg.dev/mgr-platform-prod-khsu/image-hub/dockerhub/python:3.8-slim-bullseye"
+  POETRY_HTTP_BASIC_ANALYTICSB2B__APPS__COMMON_USERNAME: "gitlab-ci-token"
+  POETRY_HTTP_BASIC_ANALYTICSB2B__APPS__COMMON_PASSWORD: $CI_JOB_TOKEN
+  POETRY_HTTP_BASIC_ANALYTICSB2B__APPS__APPS_BASE_USERNAME: "gitlab-ci-token"
+  POETRY_HTTP_BASIC_ANALYTICSB2B__APPS__APPS_BASE_PASSWORD: $CI_JOB_TOKEN

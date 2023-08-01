@@ -1,0 +1,11 @@
+line-length = 120
+ignore = ["D107"]
+select = ["B", "C", "D", "E", "F", "I", "W", "B9"]
+target-version = "py38"
+fix = true
+
+[per-file-ignores]
+"tests/*" = ["D"]
+
+[pydocstyle]
+convention = "google"

@@ -1,0 +1,27 @@
+# Ignore IDE config
+.idea/
+.vscode/
+
+# Ignore creds
+.creds/
+
+# Ignore CI files
+.coverage
+.coverage.xml
+.dockerignore
+.gcloudignore
+.junit.xml
+
+# Ignore Python
+__pycache__/
+*.egg
+*.egg-info
+*.pickle
+*.py[cod]
+*$.py.class
+venv/
+.envrc
+.python-version
+
+# MacOS
+.DS_Store
