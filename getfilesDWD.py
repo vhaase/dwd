@@ -21,7 +21,7 @@ class DWD:
     
     def listfilenames(self, url: str, ext: str = ''):
         """
-        Target is to download all files from DWD with weather observations. Those files are in the
+        Objective is to download all files from DWD with weather observations. Those files are in the
         "recent" folder of the DWD-website.
         This method extracts the file-list from the given url for recents where the links to the
         files are represented by text-entries on a html-page.
@@ -86,7 +86,8 @@ if __name__ == "__main__":
     
     # this is the folder where the downloaded files will be saved
     # TODO: replace by a bucket
-    pfad = "DWD_Input"
+    # pfad = "DWD_Input"
+    pfad = r"C:\Users\VolkerHaase\PycharmProjects\dwd\DWD_Input"
     
     # create an instance of the DWD-class
     dwd = DWD()
