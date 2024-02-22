@@ -54,7 +54,7 @@ if __name__ == "__main__":
     date = checkfiledate()
     
     folder_path_new = "DWD_Input"  # new
-    folder_path_old = "DWD_final"  # old
+    folder_path_old = "DWD_extracted"  # old
     
     creation_date = date.get_first_file_creation_date(folder_path_new)
     
