@@ -85,15 +85,14 @@ if __name__ == "__main__":
     
     # this is the folder where the downloaded files will be saved
     # TODO: replace by a bucket
-    # pfad = "DWD_Input"
-    pfad = r"C:\Users\VolkerHaase\PycharmProjects\dwd\DWD_Input"
+    pfad = 'DWD_Input'
     
     # create an instance of the DWD-class
     dwd = DWD()
     
-    # here we have all filenames for the download in a list
+    # all filenames for the download in a list
     liste = dwd.listfilenames(url, ext)
-    # counter for the number of files to be downloaded
+    # counter for the number of files left to be downloaded
     ll = len(liste)
     
     # looping through the list of files
@@ -111,3 +110,4 @@ if __name__ == "__main__":
                 print(f"File not found: {e} File: {file}")
             except Exception as e:
                 print(f"Error occurred: {e} File: {file}")
+        print('finished with downloading files')

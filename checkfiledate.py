@@ -8,6 +8,7 @@ class checkfiledate:
     """
     to avoid having data with the same date twice or even more often in the raw-file, with this class we check
     if data is already there with the same date. If yes, the processing of the data may come to q stop.
+    just checking the first file in the folder.
     """
     
     def get_first_file_creation_date(self, folder_path: os.path) -> datetime:
@@ -35,7 +36,7 @@ class checkfiledate:
         """
         we want to know, if the data to process in the folder/bucket is new or not
         Args:
-            dateol:the date of the existing file
+            dateold: the date of the existing file
             datenew: the date of the file to process
 
         Returns: bool
